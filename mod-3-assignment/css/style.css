@@ -1,0 +1,42 @@
+body {
+	font-size: 12px;
+	color: aliceblue;
+	background-color: rgb(243, 229, 229);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER-NAVBAR */
+#header-nav {
+	background-color: rgb(218, 173, 143);
+	border-radius: 0%;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 {
+	font-family: "Lora", serif;
+	color: rgb(83, 29, 29);
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+	text-shadow: 1px 1px 1px #222;
+	margin-left: -50%;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+	text-decoration: none;
+}
+
+/*  INNER CONTAINER */
+.main-container h1 {
+	color: black;
+	text-align: center;
+	margin: auto 0 20px 1000px;
+}
