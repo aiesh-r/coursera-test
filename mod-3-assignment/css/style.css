@@ -96,7 +96,7 @@ body {
 	color: black;
 	font-size: 14px;
 	background-color: bisque;
-	height: 40vh;
+	height: 60vh;
 	margin-top: 30px;
 }
 
@@ -165,6 +165,6 @@ footer {
 	/* End Header */
 
 	.menu-discription {
-		height: 60vh;
+		height: 70vh;
 	}
 }
