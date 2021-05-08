@@ -1,14 +1,14 @@
 body {
-	font-size: 12px;
+	font-size: 16px;
 	color: aliceblue;
-	background-color: rgb(243, 229, 229);
+	background-color: rgb(104, 24, 24);
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HEADER-NAVBAR */
 #header-nav {
-	background-color: rgb(218, 173, 143);
-	border-radius: 0%;
+	background-color: rgb(243, 184, 22);
+	border-radius: 0;
 	border: 0;
 }
 
@@ -26,7 +26,7 @@ body {
 	margin-bottom: 0;
 	line-height: 0.75;
 	text-shadow: 1px 1px 1px #222;
-	margin-left: -50%;
+	margin-block-start: 2%;
 }
 
 .navbar-brand a:hover,
@@ -34,9 +34,137 @@ body {
 	text-decoration: none;
 }
 
+.navbar-brand p {
+	/* Kosher cert */
+	color: #000;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	margin-top: 15px;
+}
+.navbar-brand p span {
+	vertical-align: middle;
+}
+
+.navbar-default .navbar-brand {
+	margin-bottom: 10px;
+}
+
 /*  INNER CONTAINER */
 .main-container h1 {
 	color: black;
 	text-align: center;
 	margin: auto 0 20px 1000px;
+}
+
+/* NAV-LIST */
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #951c49;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #e7e7e7;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+	border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+}
+
+/* MAIN CONTENT UNDER HEADER */
+.menu-title h2 {
+	text-align: center;
+	font-family: "Lora", serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.75;
+	text-shadow: 1px 1px 1px #222;
+}
+
+.menu-discription {
+	color: black;
+	font-size: 14px;
+	background-color: bisque;
+	height: 40vh;
+	margin-top: 30px;
+}
+
+.menu-discription .food-title {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: lowercase;
+}
+
+#food_des {
+	padding: 20px;
+	text-align: justify;
+}
+
+/*FOOTER*/
+footer {
+	width: 250px;
+	background-color: rgb(243, 184, 22);
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	/* Header */
+	.navbar-brand {
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1 {
+		/* Restaurant name */
+		padding-top: 10px;
+		font-size: 5vw; /* 1vw = 1% of viewport width */
+	}
+
+	.navbar-brand p {
+		/* Kosher cert */
+		font-size: 0.6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img {
+		/* Star-K */
+		height: 20px;
+	}
+
+	#collapsable-nav a {
+		/* Collapsed nav menu text */
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span {
+		/* Collapsed nav menu glyph */
+		font-size: 1em;
+		margin-right: 5px;
+	}
+	/* End Header */
+
+	.menu-discription {
+		height: 60vh;
+	}
 }

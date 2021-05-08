@@ -7,19 +7,29 @@
 		<title>Restuarant</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora"
+			rel="stylesheet"
+			type="text/css"
+		/>
 	</head>
 	<body>
 		<!--Start of the navbar-->
 		<header>
-			<div id="header-nav" class="navbar navbar-default navbar-fixed-top">
+			<nav id="header-nav" class="navbar navbar-default">
 				<div class="container">
 					<div class="navbar-header">
 						<div class="navbar-brand">
-							<a href="index.html"><h1>Food LLC</h1></a>
+							<a href="index.html"><h1>Food, LLC</h1></a>
 						</div>
 						<button
 							type="button"
-							class="navbar-toggle collapsed visible-xs"
+							class="navbar-toggle collapsed"
 							data-toggle="collapse"
 							data-target="#collapsable-nav"
 							aria-expanded="false"
@@ -30,16 +40,80 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
+
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+						<ul id="nav-list" class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html" class="visible-xs"> Chicken</a>
+							</li>
+							<li>
+								<a href="#" class="visible-xs"> Beef</a>
+							</li>
+							<li>
+								<a href="#" class="visible-xs"> Sushi</a>
+							</li>
+						</ul>
+						<!-- #nav-list -->
+					</div>
+					<!-- .collapse .navbar-collapse -->
 				</div>
-			</div>
+			</nav>
 		</header>
 		<!--End of the navbar-->
-
-		<!-- start of the inner container-->
-		<div class="main-container">
-			<h2>Main Menu</h2>
+		<div class="main-content">
+			<div class="container-fluid">
+				<div class="menu-title"><h2>Our Menu</h2></div>
+				<div class="menu-discription">
+					<div class="food-title"><h3>Chicken</h3></div>
+					<p id="food_des">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book. It has survived not
+						only five centuries, but also the leap into electronic typesetting,
+						remaining essentially unchanged. It was popularised in the 1960s
+						with the release of Letraset sheets containing Lorem Ipsum passages,
+						and more recently with desktop publishing software like Aldus
+						PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+			</div>
+			<!--sushi-->
+			<div class="container-fluid">
+				<div class="menu-discription">
+					<div class="food-title"><h3>Sushi</h3></div>
+					<p id="food_des">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book. It has survived not
+						only five centuries, but also the leap into electronic typesetting,
+						remaining essentially unchanged. It was popularised in the 1960s
+						with the release of Letraset sheets containing Lorem Ipsum passages,
+						and more recently with desktop publishing software like Aldus
+						PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+			</div>
+			<!--beef-->
+			<div class="container-fluid">
+				<div class="menu-discription col-xs-12">
+					<div class="food-title"><h3>Beef</h3></div>
+					<p id="food_des">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book. It has survived not
+						only five centuries, but also the leap into electronic typesetting,
+						remaining essentially unchanged. It was popularised in the 1960s
+						with the release of Letraset sheets containing Lorem Ipsum passages,
+						and more recently with desktop publishing software like Aldus
+						PageMaker including versions of Lorem Ipsum.
+					</p>
+				</div>
+			</div>
+			<br />
 		</div>
-		<!-- End of the inner container-->
 
 		<!-- jQuery (Bootstrap JS plugins depend on it) -->
 		<script src="js/jquery-2.1.4.min.js"></script>
